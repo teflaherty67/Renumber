@@ -32,7 +32,19 @@ namespace Renumber
 
             View curView = doc.ActiveView;
 
-            if (curView is Autodesk.Revit.DB.ViewSheet)
+            if (curView is Autodesk.Revit.DB.ViewSection)
+            {
+                frmViewSection curForm = new frmViewSection()
+                {
+                    Width = 800,
+                    Height = 450,
+                    WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen,
+                    Topmost = true,
+                };
+
+                curForm.ShowDialog();
+            }
+            else if (curView is Autodesk.Revit.DB.ViewSheet)
             {
                 frmViewSheet curForm = new frmViewSheet()
                 {
@@ -44,6 +56,7 @@ namespace Renumber
 
                 curForm.ShowDialog();
             }
+
             else if (curView is Autodesk.Revit.DB.ViewPlan)
             {
                 frmViewPlan curForm = new frmViewPlan()

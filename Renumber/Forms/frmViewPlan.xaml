@@ -6,7 +6,38 @@
              xmlns:local="clr-namespace:Renumber"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Title="Renumber View Elements">
-    <Grid>
-            
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Select element type to renumber:" VerticalAlignment="Center"/>
+        <RadioButton x:Name="btnViewports" Content="Viewports" Grid.Row="1" Margin="30,0,0,0" VerticalAlignment="Center"/>
+        <Label Grid.Row="2" Content="Click 'Select' then pick views to renumber in order: " VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <ListBox x:Name="lbxElements" Grid.Row="3" Grid.Column="0"/>
+        <Button x:Name="btnSelect" Grid.Row="3" Grid.Column="1" Content="Select.." Height="25" VerticalAlignment="Top" Margin="10,0,0,0" Click="btnSelect_Click" Width="80"/>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Button x:Name="btnUp" Width="80" Height="25" Margin="0,0,3,0" Content="Item Up"/>
+            <Button x:Name="btnDown" Width="80" Height="25" Margin="5,0,0,0" Content="Item Down"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal">
+            <Label Content="Select view start number:"/>
+            <ComboBox x:Name="cmbNumber" Margin="15,0,0,0" Width="90" Height="25" VerticalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="7" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btnOK" Content="OK" Width="80" Height="30" Margin="0,0,10,0"/>
+            <Button x:Name="btnCancel" Content="Cancel" Width="80" Height="30" Margin="0,0,10,0"/>
+            <Button x:Name="btnHelp" Content="Help" Width="80" Height="30"/>
+        </StackPanel>
     </Grid>
 </Window>
