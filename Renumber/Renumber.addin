@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Renumber</Text>
+    <Description>Some description for Renumber</Description>
+    <Assembly>Renumber.dll</Assembly>
+    <FullClassName>Renumber.cmdRenumber</FullClassName>
+    <ClientId>fb4ca1b7-a116-48f2-93a0-3fe31f1efa8b</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application Renumber</Name>
+    <Assembly>Renumber.dll</Assembly>
+    <FullClassName>Renumber.App</FullClassName>
+    <ClientId>57611f94-e06c-4cc8-ab2e-b115a9b3c2ec</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>
+</RevitAddIns>
