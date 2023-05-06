@@ -23,7 +23,39 @@ namespace Renumber
     {
         public frmViewPlan()
         {
-            InitializeComponent();
+            InitializeComponent();           
+        }
+
+        private void btnSelect_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = true;
+            this.Close();
+        }
+
+        internal int GetStartNumber()
+        {
+            string selectedNum = cmbNumber.SelectedItem.ToString();
+            int returnValue = Convert.ToInt32(selectedNum);
+
+            return returnValue;
+        }
+
+        private void btnOK_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = true;
+            this.Close();
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = false;
+            this.Close();
+        }
+
+
+        private void btnHelp_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -36,8 +36,8 @@ namespace Renumber
             {
                 frmViewSection curForm = new frmViewSection()
                 {
-                    Width = 800,
-                    Height = 450,
+                    Width = 400,
+                    Height = 250,
                     WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen,
                     Topmost = true,
                 };
@@ -48,8 +48,8 @@ namespace Renumber
             {
                 frmViewSheet curForm = new frmViewSheet()
                 {
-                    Width = 800,
-                    Height = 450,
+                    Width = 400,
+                    Height = 380,
                     WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen,
                     Topmost = true,
                 };
@@ -61,8 +61,8 @@ namespace Renumber
             {
                 frmViewPlan curForm = new frmViewPlan()
                 {
-                    Width = 800,
-                    Height = 450,
+                    Width = 400,
+                    Height = 350,
                     WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen,
                     Topmost = true,
                 };

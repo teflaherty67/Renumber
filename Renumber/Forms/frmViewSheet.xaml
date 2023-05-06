@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Renumber"
              mc:Ignorable="d" 
-             d:DesignWidth="420" d:DesignHeight="380" Title="Renumber Sheet Elements" MinWidth="400" MinHeight="320">
+             d:DesignWidth="420" d:DesignHeight="380" Title="Renumber Sheet Elements" MinWidth="430" MinHeight="330">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
@@ -27,17 +27,17 @@
         <ListBox x:Name="lbxElements" Grid.Row="3" Grid.Column="0"/>
         <Button x:Name="btnSelect" Grid.Row="3" Grid.Column="1" Content="Select.." Height="25" VerticalAlignment="Top" Margin="10,0,0,0" Click="btnSelect_Click" Width="80"/>
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Left">
-            <Button x:Name="btnUp" Width="80" Height="25" Margin="0,0,3,0" Content="Item Up"/>
-            <Button x:Name="btnDown" Width="80" Height="25" Margin="5,0,0,0" Content="Item Down"/>
+            <Button x:Name="btnUp" Width="80" Height="25" Margin="0,0,3,0" Content="Item Up" Click="btnUp_Click"/>
+            <Button x:Name="btnDown" Width="80" Height="25" Margin="5,0,0,0" Content="Item Down" Click="btnDown_Click"/>
         </StackPanel>
         <StackPanel Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal">
             <Label Content="Select view start number:"/>
             <ComboBox x:Name="cmbNumber" Margin="15,0,0,0" Width="90" Height="25" VerticalAlignment="Center"/>
         </StackPanel>
         <StackPanel Grid.Row="7" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button x:Name="btnOK" Content="OK" Width="80" Height="30" Margin="0,0,10,0"/>
-            <Button x:Name="btnCancel" Content="Cancel" Width="80" Height="30" Margin="0,0,10,0"/>
-            <Button x:Name="btnHelp" Content="Help" Width="80" Height="30"/>
+            <Button x:Name="btnOK" Content="OK" Width="80" Height="30" Margin="0,0,10,0" Click="btnOK_Click"/>
+            <Button x:Name="btnCancel" Content="Cancel" Width="80" Height="30" Margin="0,0,10,0" Click="btnCancel_Click"/>
+            <Button x:Name="btnHelp" Content="Help" Width="80" Height="30" Click="btnHelp_Click"/>
         </StackPanel>
     </Grid>
 </Window>

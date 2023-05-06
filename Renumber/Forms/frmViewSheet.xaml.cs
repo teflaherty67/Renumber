@@ -23,7 +23,48 @@ namespace Renumber
     {
         public frmViewSheet()
         {
-            InitializeComponent();
+            InitializeComponent();            
+        }
+
+        private void btnSelect_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = true;
+            this.Close();
+        }
+
+        internal int GetStartNumber()
+        {
+            string selectedNum = cmbNumber.SelectedItem.ToString();
+            int returnValue = Convert.ToInt32(selectedNum);
+
+            return returnValue;
+        }
+
+        private void btnUp_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDown_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnOK_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = true;
+            this.Close();
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = false;
+            this.Close();
+        }
+
+        private void btnHelp_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
